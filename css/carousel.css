@@ -1,0 +1,530 @@
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+ /* background-color: #1d1e1e; */
+    background-color: #262626;
+ /* background-color: #232323; */
+ /* background-color: #282828; */
+}
+
+.container {
+    width:100%;
+	max-width:1305px;
+    margin:0 auto;
+}
+
+.agerestricted {
+    font-size: 40px;
+}
+
+.summervacationsalesarehere {
+    
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+ .nav:hover {
+    background: #3ad0ff;
+    transition: all .4s ease;
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 0px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+
+
+
+/* CUSTOMIZE MARKETING HEADER ============================
+================================================*/
+
+.marketingheadermainpage {
+    color: #3ad0ff;
+}
+.marketingheadermainpagepara {
+ /*   color: #3fd2ff; old color */
+    color: #3ad0ff;
+}
+
+
+
+
+
+
+/* CUSTOMIZE MARKETING BUTTONS FROM MAIN PAGE ========
+==========================================*/
+
+.marketingbutton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3ad0ff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.marketingbutton a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+}
+
+.marketingbutton a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.marketingbutton:hover a {
+  padding-right: 25px;
+}
+
+.marketingbutton:hover a:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+/* category heading ========================================= */
+
+#heading-block{
+	width:100%;
+	height: auto;
+	float: left;
+	color: white;/*#3ad0ff; */
+	font-size:22px;
+    position: relative;
+    top: 90px;
+}
+
+#heading-block h2{
+	line-height:35px;
+/*	border-left:20px solid #3ad0ff; */
+    border-left:20px solid white;
+	padding-left:10px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/*==========category boxes========*/
+
+
+
+
+.catbox{
+	width:285px;
+	height: 300px;
+	float: left;
+	overflow:hidden;
+	position: relative;
+	margin:20px 18px 30px 0px;
+}
+.catbox span{
+	width:100%;
+	height: 35px;
+	line-height: 35px;
+	background:rgba(0,0,0,0.6);
+	color:white;
+	display:block;
+	bottom:30px;
+	position:absolute;
+	z-index: 999;
+	text-align: center;
+}
+
+/*.catbox:hover span{
+	color:#3ad0ff; */
+}
+
+.catbox img{
+	max-width:100%;
+	transition:all .5s ease;
+}
+
+.catbox:hover img{
+	transform:scale(1.2,1.2);
+	transition:all .5s ease;
+}
+
+/*this is for products styling ========================================*/
+.prod-box{
+	width: 300px;
+	height: 169px;
+	overflow: hidden;
+	margin: 0px 18px 30px 0px;
+	position: relative;
+	float: left;
+}
+.prod-box>img{
+	max-width: 100%;
+}
+.prod-trans{
+	background:rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	opacity:0;
+	transition:all .5s ease;
+}
+.prod-box:hover .prod-trans{
+	opacity:1;
+	transition:all .5s ease;
+}
+.prod-feature{
+	text-align: center;
+	margin-top:-150px;
+	transition:all .5s ease;
+}
+.prod-feature p{
+	color: #00eb00;
+	font-family: verdana;
+}
+.prod-box:hover .prod-feature{
+	margin-top: 50px;
+	transition:all .5s ease;
+}
+.prod-feature input{
+	width: 150px;
+	height:35px;
+	font-size:17px;
+}
+
+.productsstuff {
+    position: relative;
+    bottom: 100px;
+}
+
+/* PARTNERS IMAGES ==================== */
+
+.offer{
+	width:400px;
+	float: left;
+	margin-right: 5px;
+    margin-top: 15px;
+}
+.offer:last-child{
+	margin-right:0px;
+}
+.offer img{
+	width:100%;
+}
+
+/* footer ======================= */
+
+#footer{
+	width: 100%;
+	height: auto;
+	background: #3ad0ff;
+	float: left;
+    position: relative;
+    top: 200px;
+}
+.footer_sub{
+	width: 50%;
+	float: left;
+}
+
+.footer_sub p {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bolder;
+}
+.footer_sub_2{
+	float: right;
+}
+.footer_sub_2 ul li{
+    display: inline;
+	list-style: none;
+}
+.footer_sub_2 ul li a{
+	text-decoration: none;
+	color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 30px;
+}
+.footer_sub_2 ul li a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+.footer_sub_3{
+	width: 35%;
+	float: left;
+}
+
+.footerp {
+    text-align: right;
+}
+
+
+/* SECTION BLOG ============== */
+
+
+.sectionblog{
+	width:100%;
+	height: auto;
+	float: left;
+	color: white;/*#3ad0ff; */
+	font-size:22px;
+    position: relative;
+    top: 90px;
+}
+
+.sectionblog h1{
+	line-height:35px;
+/*	border-left:20px solid #3ad0ff; */
+   /* border-left:20px solid white; */
+	padding-left:10px;
+    font-weight: bold;
+}
+
+
+.container2 {
+    width:100%;
+	max-width:700px;
+    margin:0 auto;
+}
+
+.container2 img {
+    width:100%;
+    max-width: 700px;
+}
+
+.steamblogpost {
+    color: #3ad0ff;
+}
+
+
+/* SECTION ABOUT ============== */
+
+
+
+.sectionabout{
+	width:100%;
+	height: auto;
+	float: left;
+	color: white;/*#3ad0ff; */
+	font-size:23px;
+    position: relative;
+    top: 90px;
+}
+
+.sectionabout h1{
+	line-height:35px;
+/*	border-left:20px solid #3ad0ff; */
+   /* border-left:20px solid white; */
+	padding-left:10px;
+    font-weight: bold;
+}
+
+.container3 {
+    width:100%;
+	max-width:1100px;
+    margin:0 auto;
+}
+
+
+/* SECTION FAQ ============== */
+
+
+
+.sectionfaq{
+	width:100%;
+	height: auto;
+	float: left;
+	color: white;/*#3ad0ff; */
+	font-size:18px;
+    position: relative;
+    top: 90px;
+}
+
+.sectionfaq h2{
+	line-height:35px;
+/*	border-left:20px solid #3ad0ff; */
+   /* border-left:20px solid white; */
+	padding-left:10px;
+    font-weight: bold;
+    color: #3ad0ff;
+}
+
+.container4 {
+    width:100%;
+	max-width:700px;
+    margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
